@@ -14,7 +14,6 @@ namespace OasisEssential
         public bool ShowJoinMessage, ShowLeaveMessage, ShowDeathMessages;
 
         public int Interval;
-        public double PercentageVote;
 
         [XmlArrayItem("Message")]
         [XmlArray(ElementName = "Messages")]
@@ -30,7 +29,6 @@ namespace OasisEssential
             this.ShowJoinMessage = false;
             this.ShowLeaveMessage = false;
             this.ShowDeathMessages = false;
-            this.PercentageVote = 0.5;
 
             Interval = 300;
 
