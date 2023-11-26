@@ -41,7 +41,7 @@ namespace OasisEssential
             {
                 if (vote.Command == command[0].ToString().ToLower() || vote.Alias == command[0].ToString().ToLower())
                 {
-                    if (!player.HasPermission("cv." + vote.Command) && !player.IsAdmin)
+                    if (!player.HasPermission("cv." + vote.Alias) && !player.IsAdmin)
                     {
                         UnturnedChat.Say(player, OasisPlugin.Instance.Translate("cv_nopermission"), Color.red);
                         return;
