@@ -33,13 +33,15 @@ namespace OasisEssential
             Interval = 300;
 
             Messages = new Message[]{
-                new Message("[Oasis] Hlasuj pro náš server pomocí /vote a získej odměny pomocí /reward!","Cyan"),
-                new Message("[Oasis] Přečti si pravidla pomocí /rules, aby si je nikdy neporušil!","Cyan"),
+                new Message("[Oasis] Vote for our server using /vote and get rewards using /reward!","Cyan"),
+                new Message("[Oasis] Read the rules using /rules, so you never break them!","Cyan"),
             };
 
             Votes = new Vote[]{
-                new Vote("Den", "d", "day", "[Oasis] /cv d - Spustí nebo hlasuje pro nastavení dne!"),
-                new Vote("Noc", "n", "night", "[Oasis] /cv n - Spustí nebo hlasuje pro nastavení noci!"),
+                new Vote("Den", "d", "day", "[Oasis] /cv d - Start or vote for setting the day!"),
+                new Vote("Noc", "n", "night", "[Oasis] /cv n - Start or vote for setting the night!"),
+                new Vote("Noc", "n", "weather storm", "[Oasis] /cv n - Start or vote for setting the rain!"),
+                new Vote("Noc", "n", "weather none", "[Oasis] /cv n - Start or vote for setting the end of rain!"),
             };
         }
     }
